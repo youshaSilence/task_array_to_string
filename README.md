@@ -1,2 +1,17 @@
-# task_array_to_string
-Task for backend developer vacancy
+# Array Converter
+## Задание
+Написать модуль для Node.JS, который преобразует массив чисел в строку по
+по определенным правилам.
+
+## Установка
+Модуль можно установить командой `npm install array-to-string`.
+
+## Использование
+```$xslt
+const convert = require('array-to-string');
+
+converter([1, 2, 3, 10]);
+```
+
+## Тестирование
+Для тестов используется jest. Запуск командой: `npm test`.

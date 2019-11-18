@@ -1,4 +1,4 @@
-const generateString = (start, end) => {
+const generateString = async (start, end) => {
     let str = '';
     if (start === end) {
         str += `${start},`;

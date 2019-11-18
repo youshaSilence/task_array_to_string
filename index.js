@@ -1,6 +1,6 @@
 const { generateString, removeLastComma } = require('./processString');
 
-const arrayToString = (numbers  ) => {
+const convert = async (numbers) => {
     let str = '';
     let startChunk = numbers[0]; // Иницируем первую часть
     let endChunk = numbers[0];
@@ -9,15 +9,15 @@ const arrayToString = (numbers  ) => {
         if ((endChunk + 1) === numbers[i]) {
             endChunk +=1; // Обновляем актуальный конец отрезка
         } else {
-            // Генерируем часть строки из получившегося отрезка (единственный асинхронный момент)
-            setTimeout(str += generateString(startChunk, endChunk), 0);
+            // Генерируем часть строки из получившегося отрезка
+            str += await generateString(startChunk, endChunk);
             startChunk = numbers[i]; // Обновляем переменные границ отрезка
             endChunk = numbers[i];
         }
     }
-    str += generateString(startChunk, endChunk); // Добавляем оставшийся кусок к строке
+    str += await generateString(startChunk, endChunk); // Добавляем оставшийся кусок к строке
     str = removeLastComma(str);
     return str;
 };
 
-module.exports = arrayToString;
+module.exports = convert;
