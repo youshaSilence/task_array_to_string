@@ -10,13 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/youshaSilence/task_array_to_string.git"
   },
-  "author": "",
+  "author": "youshaSilence",
+  "keywords": [
+    "array"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/youshaSilence/task_array_to_string/issues"
   },
   "homepage": "https://github.com/youshaSilence/task_array_to_string#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^24.9.0"
   }
 }
