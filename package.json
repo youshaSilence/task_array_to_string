@@ -1,5 +1,5 @@
 {
-  "name": "array-to-string",
+  "name": "array-convertor",
   "version": "1.0.0",
   "description": "Processes array of numbers and converts it to string",
   "main": "index.js",
