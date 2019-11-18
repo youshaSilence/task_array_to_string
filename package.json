@@ -1,7 +1,7 @@
 {
-  "name": "task_array_to_string",
+  "name": "array-to-string",
   "version": "1.0.0",
-  "description": "Task for backend developer vacancy",
+  "description": "Processes array of numbers and converts it to string",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/youshaSilence/task_array_to_string/issues"
   },
-  "homepage": "https://github.com/youshaSilence/task_array_to_string#readme"
+  "homepage": "https://github.com/youshaSilence/task_array_to_string#readme",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
 }
