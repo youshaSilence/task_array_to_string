@@ -10,7 +10,7 @@
 ```$xslt
 const convert = require('array-to-string');
 
-converter([1, 2, 3, 10]);
+convert([1, 2, 3, 10]);
 ```
 
 ## Тестирование
