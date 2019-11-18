@@ -4,11 +4,11 @@
 по определенным правилам.
 
 ## Установка
-Модуль можно установить командой `npm install array-to-string`.
+Модуль можно установить командой `npm install array-convertor`.
 
 ## Использование
 ```$xslt
-const convert = require('array-to-string');
+const convert = require('array-convertor');
 
 convert([1, 2, 3, 10]);
 ```
